@@ -22,7 +22,6 @@ function App() {
         <Route path='/login' element={<Auth/>} />
         <Route path='/register' element={<Auth register/>} />
         <Route path='/dashboard' element={<Dashboard/>} />
-        <Route path='*' element={<PageNotFound/>} />
         <Route path='/dashboard/viewbook/:id' element={<ViewBook/>} />
         <Route path='/cart' element={<Cart/>} />
         <Route path='/orders' element={<Orders/>} />
@@ -33,6 +32,7 @@ function App() {
         {/* view all orders of a user */}
         <Route path='/all-users-orders/:id' element={<AllOrders/>} />
         <Route path='/order-placed' element={<OrderPlaced/>}/>
+        <Route path='*' element={<PageNotFound/>} />
       </Routes>
       <Footer/>
     </div>
